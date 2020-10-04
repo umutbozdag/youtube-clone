@@ -1,0 +1,13 @@
+.sidebar--open {
+  + .route-wrapper {
+    margin-left: 0;
+  }
+}
+
+.route-wrapper {
+  margin-left: rem(80px);
+}
+
+.sidebar-video-wrapper {
+  
+}

@@ -1,14 +1,14 @@
-// base
-@import "base/reset";
-@import "base/typography";
-@import "base/normalize";
-@import "base/global";
-
 // utils
 @import "utils/variables";
 @import "utils/classes";
 @import "utils/mixins";
 @import "utils/functions";
+
+// base
+@import "base/reset";
+@import "base/typography";
+@import "base/normalize";
+@import "base/global";
 
 // components
 @import "components/button";
@@ -20,6 +20,7 @@
 @import "layout/grid";
 @import "layout/sidebar";
 @import "layout/video-list";
+@import "layout/navbar";
 
 // pages
 

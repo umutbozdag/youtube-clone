@@ -1,0 +1,47 @@
+.navbar {
+ 
+}
+
+.navbar__container {
+  padding-left: rem(32px);
+  padding-top: rem(30px);
+}
+
+.navbar__brand {
+  margin-right: rem(59px);
+  .menu-icon {
+    margin-right: rem(28px);
+    cursor: pointer;
+  }
+}
+
+.navbar__search {
+  
+}
+
+.navbar__controls { 
+  width: 100%;
+  
+}
+
+.controls-list {
+  justify-content: flex-end;
+
+  &__item {
+    margin-right: rem(50px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .list-item-avatar {
+
+  }
+}
+
+.list-item-img {
+  width: rem(40px);
+  height: rem(40px);
+  object-fit: cover;
+}

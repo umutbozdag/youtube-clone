@@ -1,0 +1,95 @@
+.sidebar {
+  background-color: $c-white;
+  
+  width: 200px;
+  height: max-content;
+  padding: rem(59px) rem(32px) 0 rem(32px);
+  overflow-y: auto;
+
+  &__title--big {
+    font-size: rem(18px);
+    color: $c-black;
+    font-weight: bold;
+  }
+
+  svg {
+    height: rem(20px);
+    width: rem(20px);
+  }
+  
+  &__brand-logo {
+    width: rem(116px);
+    height: rem(25px);
+  }
+
+  &__menu-icon {
+    margin-right: rem(28px);
+  }
+
+  &--open { }
+}
+
+.sidebar__menu { }
+
+.menu-list {
+  &__item {
+    margin-bottom: rem(28px);
+
+  }
+
+  &__item--last {
+    margin-bottom: 0;
+  }
+
+  &--top {
+    margin-bottom: rem(60px);
+  }
+}
+
+.item {
+  text-decoration: none;  
+  color: $c-gray;
+
+  &__icon { }
+
+  &__link {
+    margin-left: rem(13px);
+  }
+
+  &__avatar {
+    width: rem(26px);
+    height: rem(26px);
+  }
+
+  &__name {
+    margin-left: rem(10px);
+  }
+
+  &:hover {
+    color: $c-black;
+  }
+}
+
+
+// Sidebar subscriptions
+.sidebar__subscriptions { 
+  margin-top: rem(58px);
+}
+
+.subscriptions-list {
+  margin-top: rem(30px);
+
+  &__item {
+    margin-bottom: rem(23px);
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Sidebar footer
+.sidebar__footer { 
+  margin-top: rem(104px);
+  margin-bottom: rem(40px);
+}

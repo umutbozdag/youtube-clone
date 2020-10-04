@@ -1,0 +1,21 @@
+.search-input {
+  background-color: $c-gallery;
+  border-radius: 22px;
+}
+
+.search-input__field {
+  border: none;
+  background-color: $c-gallery;
+  padding: rem(12px) rem(23px);
+  width: rem(830px);
+  border-radius: 22px;
+  outline: none;
+  
+  &::placeholder {
+    color: $c-shark;
+  }
+}
+
+.search-input__icon {
+  padding-right: rem(17px);
+}

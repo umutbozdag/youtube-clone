@@ -1,3 +1,39 @@
+html {
+  font-size: 16px;
+  
+}
+
 body {
-  scroll-behavior: smooth;
+  background-color: $c-white;
+  box-sizing: border-box;
+}
+
+body, input {
+  font-family: "Mulish", sans-serif;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $c-silver;
+  border-radius: 12px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $c-gray;
+  border-radius: 12px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $c-black;
 }
