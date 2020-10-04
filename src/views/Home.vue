@@ -1,11 +1,10 @@
 <template>
-  <div class="row"></div>
+  <div>asdsa</div>
 </template>
 
 <script>
 export default {
   name: "Home",
-  components: {},
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss"></style>
