@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import home from "../views/home.vue";
+import Home from "@/views/home";
+import VideoDetail from "@/views/video-detail";
+import ChannelDetail from "@/views/channel-detail";
 
 Vue.use(VueRouter);
 
@@ -8,7 +10,17 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: home,
+    component: Home,
+  },
+  {
+    path: "/watch",
+    name: "VideoDetail",
+    component: VideoDetail,
+  },
+  {
+    path: "/channel",
+    name: "ChannelDetail",
+    component: ChannelDetail,
   },
 ];
 
