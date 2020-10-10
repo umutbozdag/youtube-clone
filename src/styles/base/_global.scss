@@ -9,7 +9,7 @@ body {
 }
 
 body, input {
-  font-family: "Mulish", sans-serif;
+font-family: "Mulish", sans-serif;
 }
 
 
@@ -36,4 +36,23 @@ body, input {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $c-black;
+}
+
+.sidebar--open {
+  + .route-wrapper {
+    margin-left: 0;
+  }
+}
+
+.route-wrapper {
+  margin-left: rem(60px);
+}
+
+.sidebar-video-wrapper {
+  
+}
+
+@include r-max($w-mobile-sm) {
+  .route-wrapper {
+  }
 }

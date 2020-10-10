@@ -1,13 +1,28 @@
-.sidebar--open {
-  + .route-wrapper {
-    margin-left: 0;
+.home {
+  margin-top: rem(50px);
+  overflow: hidden;
+  flex: 1;
+
+}
+
+.video-list__header-wrapper {
+  margin-bottom: 30px;
+
+  .category-img {
+    width: 50px;
+    margin-right: 20px;
   }
-}
 
-.route-wrapper {
-  margin-left: rem(80px);
-}
+  .category-title {
+    font-size: 26px;
+    font-weight: 700;
+  }
 
-.sidebar-video-wrapper {
-  
+  .category-info {
+    color: $c-silver;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
 }

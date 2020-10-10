@@ -1,8 +1,6 @@
 .sidebar {
   background-color: $c-white;
-  
-  width: 200px;
-  height: max-content;
+  flex-basis: 200px;
   padding: rem(59px) rem(32px) 0 rem(32px);
   overflow-y: auto;
 
@@ -92,4 +90,11 @@
 .sidebar__footer { 
   margin-top: rem(104px);
   margin-bottom: rem(40px);
+}
+
+
+@include r-max(321px) {
+  .sidebar {
+    display: none;
+  }
 }

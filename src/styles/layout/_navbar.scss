@@ -21,7 +21,7 @@
 
 .navbar__controls { 
   width: 100%;
-  
+  padding-right: rem(70px);
 }
 
 .controls-list {
@@ -34,14 +34,22 @@
       margin-right: 0;
     }
   }
+}
 
-  .list-item-avatar {
-
-  }
+.list-item-avatar {
+  width: rem(40px);    
+  height: rem(40px);
 }
 
 .list-item-img {
   width: rem(40px);
   height: rem(40px);
   object-fit: cover;
+}
+
+
+@include r-max(321px) {
+  .navbar {
+    display: none;
+  }
 }

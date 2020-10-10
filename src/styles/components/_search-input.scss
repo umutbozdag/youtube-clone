@@ -1,21 +1,32 @@
 .search-input {
-  background-color: $c-gallery;
+  background-color: lighten($c-gallery, 5);
   border-radius: 22px;
+  width: rem(830px);
+  justify-content: space-between;
 }
 
 .search-input__field {
   border: none;
-  background-color: $c-gallery;
-  padding: rem(12px) rem(23px);
-  width: rem(830px);
+  background-color: lighten($c-gallery, 5);
+
+
+  padding: rem(14px) rem(23px);
   border-radius: 22px;
   outline: none;
+  width: 100%;
   
   &::placeholder {
-    color: $c-shark;
+    color: rgba($c-shark, 0.5);
   }
 }
 
 .search-input__icon {
   padding-right: rem(17px);
 }
+
+@include r-max($w-tablet) {
+  .search-input {
+    width: rem(350px);
+  }
+}
+
