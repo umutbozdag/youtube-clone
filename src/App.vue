@@ -2,17 +2,20 @@
   <div id="app">
     <navbar />
     <div class="sidebar-main-wrapper" style="display: flex;">
-      <sidebar />
+      <the-sidebar />
       <router-view class="route-wrapper"></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import Sidebar from "@/components/sidebar";
+import TheSidebar from "@/components/the-sidebar";
 import Navbar from "@/components/navbar";
 export default {
-  components: { Sidebar, Navbar },
+  components: {
+    TheSidebar,
+    Navbar,
+  },
 };
 </script>
 
