@@ -1,0 +1,42 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button--primary {
+  background-color: $c-red;
+  color: $c-white;
+
+  &:hover {
+    background-color: darken($c-red, 10);
+
+  }
+}
+
+.button--light {
+  background-color: $c-gallery;
+  color: $c-shark;
+
+  &:hover {
+
+  }
+}
+
+.button--secondary {
+  background-color: rgba($c-black, 0.24);
+}
+
+.button--rounded {
+  border-radius: 50%;
+}
+
+.button--as-icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
