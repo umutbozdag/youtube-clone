@@ -170,6 +170,12 @@
           <span class="item__name">Settings</span>
         </a>
       </div>
+
+      <div class="sidebar__mobile">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
     </div>
   </transition>
 </template>
