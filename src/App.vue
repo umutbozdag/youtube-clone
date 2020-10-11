@@ -3,22 +3,19 @@
     <navbar />
     <div class="sidebar-main-wrapper grid" style="display: flex;">
       <the-sidebar />
-      <navbar-mobile />
       <router-view class="route-wrapper"></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import TheSidebar from "@/components/the-sidebar";
-import Navbar from "@/components/navbar";
-import NavbarMobile from "@/components/navbar-mobile";
+import TheSidebar from "@/components/TheSidebar";
+import Navbar from "@/components/Navbar";
 
 export default {
   components: {
     TheSidebar,
     Navbar,
-    NavbarMobile,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 import Vue from "vue";
-import app from "./app.vue";
+import app from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
@@ -11,7 +11,7 @@ import IconCamera from "@/assets/icons/icon-camera.svg";
 import IconGrid from "@/assets/icons/icon-grid.svg";
 import IconNotification from "@/assets/icons/icon-notification.svg";
 
-import BaseButton from "@/components/base-button";
+import BaseButton from "@/components/BaseButton";
 
 Vue.component("base-button", BaseButton);
 Vue.component("icon-home", IconHome);

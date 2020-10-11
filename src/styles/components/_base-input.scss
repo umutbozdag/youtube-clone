@@ -1,37 +1,36 @@
-.search-input {
+.input {
   background-color: lighten($c-gallery, 5);
   border-radius: 22px;
   width: rem(830px);
   justify-content: space-between;
 }
 
-.search-input__field {
+.input__field {
   border: none;
-  background-color: lighten($c-gallery, 5);
-
+  background-color: inherit;
 
   padding: rem(14px) rem(23px);
   border-radius: 22px;
   outline: none;
   width: 100%;
-  
+
   &::placeholder {
     color: rgba($c-shark, 0.5);
   }
 }
 
-.search-input__icon {
+.input__icon {
   padding-right: rem(17px);
 }
 
 @include r-max($w-tablet) {
-  .search-input {
+  .input {
     width: rem(350px);
   }
 }
 
 @include r-max($w-laptop-lg) {
-  .search-input {
+  .input {
     width: 400px;
   }
 }

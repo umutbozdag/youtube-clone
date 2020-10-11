@@ -1,7 +1,7 @@
 <template>
   <div class="video-list">
     <div class="video-list__videos" ref="videos" :id="id">
-      <video-card
+      <video-list-card-item
         v-for="video in videos"
         :key="video.id"
         :title="video.title"
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import VideoCard from "./video-card";
+import VideoListCardItem from "./VideoListCardItem";
 
 export default {
   components: {
-    VideoCard,
+    VideoListCardItem,
   },
   props: {
     videos: {

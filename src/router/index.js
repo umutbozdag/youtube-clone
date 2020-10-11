@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/views/home";
-import VideoDetail from "@/views/video-detail";
-import ChannelDetail from "@/views/channel-detail";
+import Home from "@/views/Home";
+import VideoDetail from "@/views/VideoDetail";
+import ChannelDetail from "@/views/ChannelDetail";
 
 Vue.use(VueRouter);
 

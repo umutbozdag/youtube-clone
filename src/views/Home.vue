@@ -58,8 +58,8 @@
 </template>
 
 <script>
-import VideoList from "@/components/video-list";
-import VideoListHeader from "@/components/video-list-header";
+import VideoList from "@/components/VideoList";
+import VideoListHeader from "@/components/VideoListHeader";
 
 export default {
   name: "Home",
