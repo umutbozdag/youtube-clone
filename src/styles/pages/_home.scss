@@ -1,8 +1,6 @@
 .home {
   margin-top: rem(50px);
   overflow: hidden;
-  flex: 1;
-
 }
 
 .video-list__header-wrapper {
@@ -24,5 +22,19 @@
     font-size: 16px;
     font-weight: 300;
   }
+}
 
+@include r-min($w-mobile-sm) {
+  @include r-max($w-mobile-lg) {
+    .home {
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .video-list__header-wrapper {
+      margin-bottom: 23px;
+    }
+  }
 }

@@ -30,3 +30,8 @@
   }
 }
 
+@include r-max($w-laptop-lg) {
+  .search-input {
+    width: 400px;
+  }
+}

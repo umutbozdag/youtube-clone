@@ -1,8 +1,6 @@
 .sidebar {
   background-color: $c-white;
-  flex-basis: 200px;
-  padding: rem(59px) rem(32px) 0 rem(32px);
-  overflow-y: auto;
+  flex: 1;
 
   &__title--big {
     font-size: rem(18px);
@@ -10,11 +8,17 @@
     font-weight: bold;
   }
 
+  &__desktop {
+    flex-basis: 200px;
+    padding: rem(59px) rem(32px) 0 rem(32px);
+    overflow-y: auto;
+  }
+
   svg {
     height: rem(20px);
     width: rem(20px);
   }
-  
+
   &__brand-logo {
     width: rem(116px);
     height: rem(25px);
@@ -24,15 +28,16 @@
     margin-right: rem(28px);
   }
 
-  &--open { }
+  &--open {
+  }
 }
 
-.sidebar__menu { }
+.sidebar__menu {
+}
 
 .menu-list {
   &__item {
     margin-bottom: rem(28px);
-
   }
 
   &__item--last {
@@ -45,10 +50,11 @@
 }
 
 .item {
-  text-decoration: none;  
+  text-decoration: none;
   color: $c-gray;
 
-  &__icon { }
+  &__icon {
+  }
 
   &__link {
     margin-left: rem(13px);
@@ -68,9 +74,8 @@
   }
 }
 
-
 // Sidebar subscriptions
-.sidebar__subscriptions { 
+.sidebar__subscriptions {
   margin-top: rem(58px);
 }
 
@@ -79,7 +84,7 @@
 
   &__item {
     margin-bottom: rem(23px);
-    
+
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -87,14 +92,19 @@
 }
 
 // Sidebar footer
-.sidebar__footer { 
-  margin-top: rem(104px);
+.sidebar__footer {
+  margin-top: 100%;
   margin-bottom: rem(40px);
 }
 
+@include r-min($w-mobile-sm) {
+  @include r-max($w-mobile-lg) {
+    .sidebar {
+      flex: none;
+    }
 
-@include r-max(321px) {
-  .sidebar {
-    display: none;
+    .sidebar__desktop {
+      display: none;
+    }
   }
 }

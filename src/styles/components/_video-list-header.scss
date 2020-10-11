@@ -13,8 +13,10 @@
   }
 }
 
-@include r-max(321px) {
-  .video-list-header {
-    display: none;
+@include r-min($w-mobile-sm) {
+  @include r-max($w-mobile-lg) {
+    .video-list-header {
+      display: none;
+    }
   }
 }

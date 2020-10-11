@@ -5,24 +5,23 @@
 .video-list__videos {
   display: flex;
   overflow-x: hidden;
-  width: 1600px;
 }
 
-@include r-max(321px) {
-  .video-list {
-    background-color: red;    
-  }
-
-  .video-list__videos {
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+@include r-min($w-mobile-sm) {
+  @include r-max($w-mobile-lg) {
+    .video-list {
+    }
+  
+    .video-list__videos {
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
   }
 }
 
 @include r-max(1750px) {
-    .video-list__videos {
-      width: 1500px;
-    }
+  .video-list__videos {
+  }
 }

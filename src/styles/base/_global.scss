@@ -1,6 +1,5 @@
 html {
   font-size: 16px;
-  
 }
 
 body {
@@ -8,10 +7,10 @@ body {
   box-sizing: border-box;
 }
 
-body, input {
-font-family: "Mulish", sans-serif;
+body,
+input {
+  font-family: "Mulish", sans-serif;
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -23,14 +22,12 @@ font-family: "Mulish", sans-serif;
 ::-webkit-scrollbar-track {
   background: $c-silver;
   border-radius: 12px;
-
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: $c-gray;
   border-radius: 12px;
-
 }
 
 /* Handle on hover */
@@ -45,14 +42,16 @@ font-family: "Mulish", sans-serif;
 }
 
 .route-wrapper {
-  margin-left: rem(60px);
+  margin-left: rem(80px);
 }
 
 .sidebar-video-wrapper {
-  
 }
 
-@include r-max($w-mobile-sm) {
-  .route-wrapper {
+@include r-min($w-mobile-sm) {
+  @include r-max($w-mobile-lg) {
+    .route-wrapper {
+      margin-left: 0;
+    }
   }
 }

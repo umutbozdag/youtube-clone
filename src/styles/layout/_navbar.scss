@@ -1,14 +1,21 @@
 .navbar {
- 
 }
 
 .navbar__container {
   padding-left: rem(32px);
+  padding-right: rem(32px);
+
   padding-top: rem(30px);
+  display: flex;
+  align-items: center;
 }
 
 .navbar__brand {
   margin-right: rem(59px);
+  display: flex;
+  align-items: center;
+  flex: 1;
+
   .menu-icon {
     margin-right: rem(28px);
     cursor: pointer;
@@ -16,16 +23,19 @@
 }
 
 .navbar__search {
-  
+  flex: 2;
 }
 
-.navbar__controls { 
+.navbar__controls {
   width: 100%;
-  padding-right: rem(70px);
 }
 
 .controls-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: flex-end;
+  flex: 1;
 
   &__item {
     margin-right: rem(50px);
@@ -37,7 +47,7 @@
 }
 
 .list-item-avatar {
-  width: rem(40px);    
+  width: rem(40px);
   height: rem(40px);
 }
 
@@ -47,9 +57,27 @@
   object-fit: cover;
 }
 
+@include r-min($w-mobile-sm) {
+  @include r-max($w-mobile-lg) {
+    .navbar {
+    }
 
-@include r-max(321px) {
-  .navbar {
+    .navbar__container {
+      padding: 12px 16px;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    .navbar__search {
+      display: none;
+    }
+  }
+}
+
+@include r-max($w-laptop-lg) {
+  .controls-list svg {
     display: none;
   }
 }
