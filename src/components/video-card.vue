@@ -16,6 +16,7 @@
       <img
         v-else
         src="../assets/images/video-cover-big.png"
+        class="video-card-thumbnail video-card-thumbnail--big"
         tabindex="0"
         :alt="title"
       />
