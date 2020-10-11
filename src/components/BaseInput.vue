@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import IconSearch from "@/assets/icons/icon-search.svg";
 export default {
   name: "BaseInput",
   props: {
@@ -17,9 +16,6 @@ export default {
       type: Boolean,
       default: false,
     },
-  },
-  components: {
-    IconSearch,
   },
 };
 </script>
