@@ -1,7 +1,7 @@
 <template>
   <div
     @click="$router.push('/watch')"
-    class="video-card"
+    class="video-card swiper-slide"
     :class="{ 'video-card--big': size === 'big' }"
   >
     <div class="video-card__cover">

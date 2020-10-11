@@ -1,6 +1,6 @@
 <template>
-  <div class="video-list">
-    <div class="video-list__videos" ref="videos" :id="id">
+  <div class="video-list swiper-container">
+    <div class="video-list__videos swiper-wrapper" ref="videos" :id="id">
       <video-list-card-item
         v-for="video in videos"
         :key="video.id"
@@ -33,4 +33,7 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.swiper-container {
+}
+</style>

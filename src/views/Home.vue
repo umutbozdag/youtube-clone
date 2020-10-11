@@ -60,6 +60,8 @@
 <script>
 import VideoList from "@/components/VideoList";
 import VideoListHeader from "@/components/VideoListHeader";
+import Swiper from "swiper/bundle";
+import "swiper/swiper-bundle.css";
 
 export default {
   name: "Home",
@@ -191,61 +193,41 @@ export default {
           size: "big",
         },
       ],
+      swiper: null,
+      width: null,
+      swiperSettings: {
+        slidesPerView: "auto",
+        grabCursor: true,
+        mousewheel: {
+          enabled: true,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      },
     };
   },
   methods: {
-    /* eslint no-inner-declarations: 0 */
-
-    /**
-     * scrollTo - Horizontal Scrolling
-     * @param {(HTMLElement ref)} element - Scroll Container
-     * @param {number} scrollPixels - pixel to scroll
-     * @param {number} duration -  Duration of scrolling animation in millisec
-     */
-    scrollTo(element, scrollPixels, duration) {
-      const scrollPos = element.scrollLeft;
-      // Condition to check if scrolling is required
-      if (
-        !(
-          (scrollPos === 0 || scrollPixels > 0) &&
-          (element.clientWidth + scrollPos === element.scrollWidth ||
-            scrollPixels < 0)
-        )
-      ) {
-        // Get the start timestamp
-        const startTime =
-          "now" in window.performance
-            ? performance.now()
-            : new Date().getTime();
-
-        function scroll(timestamp) {
-          //Calculate the timeelapsed
-          const timeElapsed = timestamp - startTime;
-          //Calculate progress
-          const progress = Math.min(timeElapsed / duration, 1);
-          //Set the scrolleft
-          element.scrollLeft = scrollPos + scrollPixels * progress;
-          //Check if elapsed time is less then duration then call the requestAnimation, otherwise exit
-          if (timeElapsed < duration) {
-            //Request for animation
-            window.requestAnimationFrame(scroll);
-          } else {
-            return;
-          }
-        }
-        //Call requestAnimationFrame on scroll function first time
-        window.requestAnimationFrame(scroll);
-      }
-    },
     swipeLeft(refName) {
-      const content = document.getElementById(refName);
-      this.scrollTo(content, -300, 200);
+      let clickedSwiperIdx = this.swiper.findIndex(
+        (s) => s.wrapperEl.id === refName
+      );
+
+      this.swiper[clickedSwiperIdx].slidePrev();
     },
     swipeRight(refName) {
-      const content = document.getElementById(refName);
+      let clickedSwiperIdx = this.swiper.findIndex(
+        (s) => s.wrapperEl.id === refName
+      );
 
-      this.scrollTo(content, 300, 200);
+      this.swiper[clickedSwiperIdx].slideNext();
     },
+  },
+
+  watch: {},
+
+  mounted() {
+    this.swiper = new Swiper(".swiper-container", this.swiperSettings);
   },
 };
 </script>
