@@ -11,8 +11,11 @@
 
   &:hover {
     background-color: darken($c-red, 10);
-
   }
+}
+
+.button--transparent {
+  background-color: transparent;
 }
 
 .button--light {
@@ -20,7 +23,6 @@
   color: $c-shark;
 
   &:hover {
-
   }
 }
 

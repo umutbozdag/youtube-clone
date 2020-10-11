@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@each $name, $value in $typography {
+  .heading--#{$name} {
+    font-size: $value;
+  }
+}

@@ -3,9 +3,7 @@
   margin-right: 80px;
 
   &__title--big {
-    font-size: rem(18px);
     color: $c-black;
-    font-weight: bold;
   }
 
   &__desktop {
@@ -27,12 +25,6 @@
   &__menu-icon {
     margin-right: rem(28px);
   }
-
-  &--open {
-  }
-}
-
-.sidebar__menu {
 }
 
 .menu-list {
@@ -52,9 +44,6 @@
 .item {
   text-decoration: none;
   color: $c-gray;
-
-  &__icon {
-  }
 
   &__link {
     margin-left: rem(13px);

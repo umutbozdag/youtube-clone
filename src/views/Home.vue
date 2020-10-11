@@ -12,11 +12,11 @@
               src="@/assets/images/avatar-user.png"
               alt=""
             />
-            <p class="category-title">Dollie Blair</p>
+            <base-heading size="2">Dollie Blair</base-heading>
           </template>
         </video-list-header>
       </div>
-      <video-list :videos="userVideos" id="userVideos" />
+      <video-list :videos="userVideos" id="userVideos" horizontal swipeable />
     </div>
 
     <div class="recommended-videos">
@@ -26,11 +26,16 @@
           @swipe-right="swipeRight('recommendedVideos')"
         >
           <template #content>
-            <h1 class="category-title">Recommended</h1>
+            <base-heading size="2">Recommended</base-heading>
           </template>
         </video-list-header>
       </div>
-      <video-list :videos="recommendedVideos" id="recommendedVideos" />
+      <video-list
+        :videos="recommendedVideos"
+        id="recommendedVideos"
+        horizontal
+        swipeable
+      />
     </div>
 
     <div class="recommended-category-videos">
@@ -41,7 +46,8 @@
         >
           <template #content>
             <img class="category-img" src="@/assets/images/food.png" alt="" />
-            <h1 class="category-title">Food & Drink</h1>
+            <base-heading size="2">Food & Drink</base-heading>
+
             <p class="category-info">Recommended channel for you</p>
           </template>
 
@@ -52,7 +58,12 @@
           </template>
         </video-list-header>
       </div>
-      <video-list :videos="userVideos" id="categoryVideos" />
+      <video-list
+        :videos="userVideos"
+        id="categoryVideos"
+        horizontal
+        swipeable
+      />
     </div>
   </div>
 </template>

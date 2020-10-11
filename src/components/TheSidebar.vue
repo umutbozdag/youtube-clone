@@ -94,7 +94,9 @@
         </nav>
 
         <div class="sidebar__subscriptions">
-          <h2 class="sidebar__title sidebar__title--big">Subscriptions</h2>
+          <base-heading class="sidebar__title sidebar__title--big" size="4"
+            >Subscriptions</base-heading
+          >
 
           <ul class="subscriptions-list">
             <li class="subscriptions-list__item">

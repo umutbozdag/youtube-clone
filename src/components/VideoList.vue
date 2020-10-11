@@ -1,6 +1,15 @@
 <template>
-  <div class="video-list swiper-container">
-    <div class="video-list__videos swiper-wrapper" ref="videos" :id="id">
+  <div class="video-list" :class="{ 'swiper-container': swipeable }">
+    <div
+      class="video-list__videos"
+      :class="{
+        'video-list__videos--horizontal': horizontal,
+        'video-list__videos--vertical': !horizontal,
+        'swiper-wrapper': swipeable,
+      }"
+      ref="videos"
+      :id="id"
+    >
       <video-list-card-item
         v-for="video in videos"
         :key="video.id"
@@ -28,6 +37,14 @@ export default {
     },
     id: {
       type: String,
+    },
+    horizontal: {
+      type: Boolean,
+      default: false,
+    },
+    swipeable: {
+      type: Boolean,
+      default: false,
     },
   },
 };

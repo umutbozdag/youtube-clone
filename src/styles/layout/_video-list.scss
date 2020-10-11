@@ -6,6 +6,13 @@
   display: flex;
 }
 
+.video-list__videos--horizontal {
+}
+
+.video-list__videos--vertical {
+  flex-direction: column;
+}
+
 @include r-min($w-mobile-sm) {
   @include r-max($w-mobile-lg) {
     .video-list {

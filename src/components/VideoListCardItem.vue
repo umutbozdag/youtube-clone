@@ -23,7 +23,7 @@
       <span class="video-card__duration">{{ duration }}</span>
     </div>
     <div class="video-card__summary">
-      <h3 class="video-title">{{ title }}</h3>
+      <base-heading class="video-title" size="5">{{ title }}</base-heading>
       <div class="video-meta">
         <p class="video-meta__info">{{ views }} · {{ time }}</p>
         <p class="video-meta__owner">{{ owner }}</p>
