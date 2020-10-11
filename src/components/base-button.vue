@@ -22,7 +22,7 @@ export default {
   props: {
     variant: {
       type: String,
-      required: true,
+      default: "primary",
     },
 
     styles: {
