@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
-    <div class="navbar__container row">
-      <div class="navbar__brand row">
+    <div class="navbar__container">
+      <div class="navbar__brand">
         <icon-menu @click="handleOnMenuClicked" class="menu-icon" />
         <img class="brand-logo" src="@/assets/logo.png" alt="YouTube" />
       </div>
@@ -10,7 +10,7 @@
       </div>
 
       <div class="navbar__controls">
-        <ul class="controls-list row">
+        <ul class="controls-list">
           <li class="controls-list__item">
             <icon-camera />
           </li>
@@ -35,20 +35,11 @@
 </template>
 
 <script>
-import IconMenu from "@/assets/icons/icon-menu.svg";
-import IconCamera from "@/assets/icons/icon-camera.svg";
-import IconGrid from "@/assets/icons/icon-grid.svg";
-
-import IconNotification from "@/assets/icons/icon-notification.svg";
 import SearchInput from "./search-input";
 
 import { mapActions, mapState } from "vuex";
 export default {
   components: {
-    IconMenu,
-    IconCamera,
-    IconGrid,
-    IconNotification,
     SearchInput,
   },
   computed: {
