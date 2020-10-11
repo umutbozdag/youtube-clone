@@ -23,14 +23,26 @@
   padding-right: rem(17px);
 }
 
-@include r-max($w-tablet) {
+@include r-max($w-laptop-lg) {
   .input {
-    width: rem(350px);
+    width: 600px;
   }
 }
 
-@include r-max($w-laptop-lg) {
+@include r-max($w-laptop-md) {
+  .input {
+    width: 500px;
+  }
+}
+
+@include r-max($w-laptop) {
   .input {
     width: 400px;
+  }
+}
+
+@include r-max($w-tablet) {
+  .input {
+    width: 350px;
   }
 }

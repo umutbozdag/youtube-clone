@@ -1,6 +1,6 @@
 .sidebar {
   background-color: $c-white;
-  flex: 1;
+  margin-right: 80px;
 
   &__title--big {
     font-size: rem(18px);
@@ -101,6 +101,7 @@
   @include r-max($w-mobile-lg) {
     .sidebar {
       flex: none;
+      margin-right: 0;
     }
 
     .sidebar__desktop {

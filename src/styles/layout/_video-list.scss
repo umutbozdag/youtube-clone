@@ -1,22 +1,22 @@
-.video-list { 
+.video-list {
   margin-bottom: 50px;
 }
 
 .video-list__videos {
   display: flex;
-  overflow-x: hidden;
 }
 
 @include r-min($w-mobile-sm) {
   @include r-max($w-mobile-lg) {
     .video-list {
     }
-  
+
     .video-list__videos {
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       flex-direction: column;
+      transform: translate3d(0, 0, 0) !important;
     }
   }
 }
