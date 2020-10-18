@@ -1,0 +1,16 @@
+.video-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 80px;
+}
+
+.sidebar--open {
+  + .video-detail {
+    margin-left: 32px;
+  }
+}
+
+.video-detail__content {
+  margin-right: 40px;
+}
