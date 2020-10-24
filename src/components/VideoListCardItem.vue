@@ -1,8 +1,8 @@
 <template>
   <div
     @click="$router.push('/watch')"
-    class="video-card swiper-slide"
-    :class="{ 'video-card--big': size === 'big' }"
+    class="video-card"
+    :class="{ 'video-card--big': size === 'big', 'swiper-slide': swipeable }"
   >
     <div class="video-card__cover">
       <img
@@ -56,6 +56,9 @@ export default {
     },
     views: {
       type: String,
+    },
+    swipeable: {
+      type: Boolean,
     },
   },
 };
