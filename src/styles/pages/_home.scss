@@ -32,10 +32,15 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin-left: 0;
     }
 
     .video-list__header-wrapper {
       margin-bottom: 0;
+    }
+
+    .recommended-category-videos {
+      margin-bottom: 61px;
     }
   }
 }
