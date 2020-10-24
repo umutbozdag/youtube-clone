@@ -7,10 +7,19 @@
 }
 
 .video-list__videos--horizontal {
+  flex-direction: row;
 }
 
 .video-list__videos--vertical {
   flex-direction: column;
+
+  .video-card {
+    margin-right: 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 }
 
 @include r-min($w-mobile-sm) {

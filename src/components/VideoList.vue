@@ -19,6 +19,7 @@
         :duration="video.duration"
         :views="video.views"
         :size="video.size"
+        :swipeable="swipeable"
       />
     </div>
   </div>
