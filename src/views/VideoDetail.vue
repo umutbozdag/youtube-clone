@@ -159,7 +159,17 @@
           <base-heading size="5">
             Autoplay
           </base-heading>
-          <input type="checkbox" />
+          <div class="onoffswitch">
+            <input
+              type="checkbox"
+              name="onoffswitch"
+              class="onoffswitch-checkbox"
+              id="myonoffswitch"
+              tabindex="0"
+              checked
+            />
+            <label class="onoffswitch-label" for="myonoffswitch"></label>
+          </div>
         </div>
       </header>
       <video-list :videos="userVideos" id="queueVideos" />
