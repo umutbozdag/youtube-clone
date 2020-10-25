@@ -20,6 +20,18 @@ module.exports = {
       "@": path.resolve(__dirname, "../src"),
     };
 
+    config.module.rules.push({
+      test: /\.svg$/,
+      // If you want to import svg in css files
+      // You need to configure another rule to use file-loader for that
+      issuer: /\.(vue|js|ts|svg)$/,
+      use: [
+        // This loader compiles .svg file to .vue file
+        // So we use `vue-loader` after it
+        "vue-loader",
+        "svg-to-vue-component/loader",
+      ],
+    });
     // Return the altered config
     return config;
   },
