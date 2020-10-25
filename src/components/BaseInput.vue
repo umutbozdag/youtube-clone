@@ -1,7 +1,12 @@
 <template>
   <div class="input row" :style="styles">
     <input class="input__field" type="text" placeholder="Search" />
-    <icon-search v-if="showIcon" class="input__icon" />
+    <component
+      v-if="showIcon"
+      :is="iconComponent"
+      class="input__icon"
+    ></component>
+    <!-- <icon-search v-if="showIcon" class="input__icon" /> -->
   </div>
 </template>
 
@@ -15,6 +20,9 @@ export default {
     showIcon: {
       type: Boolean,
       default: false,
+    },
+    iconComponent: {
+      type: String,
     },
   },
 };

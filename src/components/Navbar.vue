@@ -21,7 +21,7 @@
         </template>
       </div>
       <div class="navbar__search">
-        <base-input show-icon />
+        <base-input show-icon icon-component="icon-search" />
       </div>
 
       <div class="navbar__controls">
