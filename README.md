@@ -1,4 +1,8 @@
-# youtube-redesign
+# Youtube clone
+
+> I have built reusable components with Vue 2 and used Storybook for learning purposes.
+> Live: https://serene-bell-b63fee.netlify.app/
+> Storybook live: https://6059e2ec883e84002120aa15-jccrhfsjav.chromatic.com/?path=/story/example-button--primary
 
 ## Project setup
 ```
