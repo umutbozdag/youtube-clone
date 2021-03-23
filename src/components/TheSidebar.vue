@@ -180,7 +180,7 @@
 
 <script>
 import IconHome from "@/assets/icons/icon-home.svg";
-import { mapState } from "vuex";
+import { mapActions, mapState } from "vuex";
 
 export default {
   name: "Sidebar",
@@ -190,8 +190,19 @@ export default {
   computed: {
     ...mapState(["isSidebarOpen"]),
   },
+
+  methods: {
+    ...mapActions(["setIsSidebarOpen"]),
+  },
   mounted() {
-    console.log(this.isSidebarOpen);
+    window.addEventListener("resize", (e) => {
+      if (e.target.innerWidth < 670) {
+        this.setIsSidebarOpen(false);
+      } else {
+        console.log(this.isSidebarOpen);
+        this.setIsSidebarOpen(this.isSidebarOpen);
+      }
+    });
   },
 };
 </script>
